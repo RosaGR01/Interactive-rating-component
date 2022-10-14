@@ -84,10 +84,6 @@ button:active{
     background-color: var(--White);
     color: var(--orange);
 }
-.inactive{
-    display: none;
-}
-
 .container-appreciate{
     text-align: center;
     padding: 20px 10px;
@@ -128,6 +124,7 @@ button:active{
     font-weight: 200;
     color: var(--Medium-Grey);
 }
+
 @media (max-width:500px) {
     main{
         width: 100%;
@@ -152,4 +149,8 @@ button:active{
     width: 40%;
     height: 30%;
 }
+}
+
+.inactive{
+    display: none;
 }
