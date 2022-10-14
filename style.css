@@ -1,0 +1,155 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --orange: rgb(218, 143, 4);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Overpass', sans-serif;;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 80%;
+    height: 80%;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 30%;
+    height: 70%;
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    padding: 15px;
+}
+.conteiner-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(22, 27, 59);
+    border-radius: 50%;
+}
+.conteiner-start:hover{
+    background-color: var(--orange);
+}
+.conteiner-start img{
+    margin: auto;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--White);
+}
+.section-texto{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--Light-Grey);
+}
+.container-cal{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+    color: var(--White);
+}
+button{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--White);
+}
+button:active{
+    background-color: var(--White);
+    color: var(--orange);
+}
+.inactive{
+    display: none;
+}
+
+.container-appreciate{
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-appreciate img{
+    width: 70%;
+    height: 50%;
+}
+.container-calificacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    color: var(--orange);
+    background-color: rgb(31, 35, 63);
+}
+.container-calificacion h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.appreciate-title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--White);
+    margin-top: 10px;
+
+}
+.apreciate-text{
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--Medium-Grey);
+}
+@media (max-width:500px) {
+    main{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        width: 90%;
+        height: 70%;
+    }
+}
+@media (max-width:700px) {
+    main{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        width: 90%;
+        height: 70%;
+    }
+
+    .container-appreciate img{
+    width: 40%;
+    height: 30%;
+}
+}
