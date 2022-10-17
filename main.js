@@ -8,8 +8,4 @@ function seleccionado( num){
 function ponderacion(){
     document.getElementById('calificar').classList.add('inactive');
     document.getElementById('agradeser').classList.remove('inactive');
-
-
-    
-    
 }
