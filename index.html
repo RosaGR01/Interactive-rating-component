@@ -13,7 +13,7 @@
 <body>
 
   <main>
-    <section class="inactive">
+    <section class="" id="calificar">
       <div class="conteiner-start">
         <img src="images/icon-star.svg" alt="">
       </div>
@@ -21,19 +21,19 @@
       <p class="section-texto">Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
         <div class="container-cal">
-          <div  class="conteiner-start"><span>1</span></div>
-          <div  class="conteiner-start"><span>2</span></div>
-          <div  class="conteiner-start"><span>3</span></div>
-          <div  class="conteiner-start"><span>4</span></div>
-          <div  class="conteiner-start"><span>5</span></div>
+          <button  class="conteiner-start" id="uno" onclick="seleccionado(1)"><span>1</span></button>
+          <button  class="conteiner-start" id="dos" onclick="seleccionado(2)"><span>2</span></button>
+          <button  class="conteiner-start" id="tres" onclick="seleccionado(3)"><span>3</span></button>
+          <button  class="conteiner-start" id="cuatro" onclick="seleccionado(4)"><span>4</span></button>
+          <button  class="conteiner-start" id="cinco" onclick="seleccionado(5)"><span>5</span></button>
         </div>
-        <button>SUBMIT</button>
+        <button id="btn" onclick="ponderacion()">SUBMIT</button>
     </section>
 
-  <section >
+  <section  class="inactive" id="agradeser">
     <div class="container-appreciate">
       <img src="images/illustration-thank-you.svg" alt="">
-      <div class="container-calificacion"><h2>You sected 4 out of 5</h2></div>
+      <div class="container-calificacion" ><h2 id="texto"></h2></div>
       <h2 class="appreciate-title">Thank you!</h2>
       <p class="apreciate-text">we aooreciate tou taking the time to give a rating.
         If you ever need more support, dont hesitate to get in touch!
